@@ -11,8 +11,11 @@
 // 1
 console.log(hello); 
 var hello = 'world';
+// var hello get's hoisted
+// logs hello
+// var hello is defined
+
 // logs undefined
-// var hello = 'world';
 
 
 // 2
@@ -22,8 +25,10 @@ function test(){
     var needle = 'magnet';
     console.log(needle);
 }
-// var needle is defined 'haystack'
+// var needle hoisted
+// function test() hoisted
 // calling on test()
+
 // logs 'magnet'
 
 // 3
@@ -34,8 +39,10 @@ function print(){
 }
 console.log(brendan);
 
-// brendan is defined
-// print is defined
+// brendan gets hoisted
+// print() gets hoisted
+// cslog brendad
+
 // output = 'only okay'
 // output = 'super cool'
 
@@ -50,9 +57,12 @@ function eat(){
     var food = 'gone';
 }
 
-// var food is defined
-// output = 'chicken'
+// var food gets hoisted
+// eat() gets hoisted
+// var food chicken gets hoisted
 // eat() is called
+
+// output = 'chicken'
 // output = 'half-chicken'
 
 // 5
@@ -66,10 +76,11 @@ var mean = function() {
 }
 console.log(food);
 
-// mean() is defined
-// undefined
-// output = 'chicken'
-// output = 'fish'
+// var mean = function gets hoisted
+// food chicken hoisted
+// food fish hoisted
+// mean is called
+
 // undefined
 
 // 6
@@ -84,10 +95,13 @@ function rewind() {
 }
 console.log(genre);
 
+// var genre gets hoisted
+// rewind() gets hoisted
+// genre disco hoisted
+// genre rock hoisted
+// genre rnb hoisted
+
 // undefined
-// genre = 'disco' is defined
-// rewind() is called
-// rewind() is defined
 // output = 'rock'
 // output = 'r&b'
 // output = ' disco '
@@ -103,6 +117,11 @@ function learn() {
     console.log(dojo);
 }
 console.log(dojo);
+
+// dojo san jo gets hoisted
+// learn() gets hoisted
+// dojo seattle gets hoisted
+// dojo burbank gets hoisted
 
 // undefined
 // output = 'seattle'
